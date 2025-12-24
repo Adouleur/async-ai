@@ -33,7 +33,7 @@ BACKEND_URL=<your-ngrok-url-or-prod-url>
 ```
 
 Note: If you are testing webhooks locally with QStash, you need to install ngrok and authenticate it first.
-Run
+Run 
 ```bash
 npm install ngrok -g
 ngrok config add-authtoken <YOUR_TOKEN>
