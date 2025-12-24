@@ -32,8 +32,13 @@ QSTASH_TOKEN=<your-qstash-token>
 BACKEND_URL=<your-ngrok-url-or-prod-url>
 ```
 
-Note: If you are testing webhooks locally with QStash, run ngrok http 3000 and use the generated ngrok URL as BACKEND_URL.
-
+Note: If you are testing webhooks locally with QStash, you need to install ngrok and authenticate it first.
+Run 
+```bash
+npm install ngrok -g
+ngrok config add-authtoken <YOUR_TOKEN>
+ngrok http 3000
+```
 ## 3. Frontend Setup
 
 Create a .env file with:
