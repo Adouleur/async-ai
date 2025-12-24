@@ -1,0 +1,13 @@
+.analyze-form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    input{
+        min-height: 40px;
+    }
+
+    textarea{
+        min-height: 100px;
+    }
+}
