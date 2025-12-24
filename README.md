@@ -15,13 +15,13 @@ This repository contains a simple web service where users can submit data about 
 ```bash
 git clone https://github.com/Adouleur/async-ai.git
 cd async-ai
-
+```
 ## 2. Backend Setup
 
 ```bash
 cd backend
 npm install
-
+```
 Create a .env file with:
 
 UPSTASH_REDIS_REST_URL=<your-redis-url>
@@ -40,5 +40,6 @@ VITE_API_BASE_URL=http://localhost:3000
 
 Run frontend:
 
+```bash
 npm run dev
-
+```
