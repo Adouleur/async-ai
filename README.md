@@ -24,22 +24,39 @@ npm install
 ```
 Create a .env file with:
 
+```env
 UPSTASH_REDIS_REST_URL=<your-redis-url>
 UPSTASH_REDIS_REST_TOKEN=<your-redis-token>
 OPENAI_API_KEY=<your-openai-api-key>
 QSTASH_TOKEN=<your-qstash-token>
 BACKEND_URL=<your-ngrok-url-or-prod-url>
+```
 
-Note: If you are testing webhooks locally with QStash, run ngrok http 3000 and use the generated ngrok URL as BACKEND_URL.
+Note: If you are testing webhooks locally with QStash, you need to install ngrok and authenticate it first.
+Run
+```bash
+npm install ngrok -g
+ngrok config add-authtoken <YOUR_TOKEN>
+ngrok http 3000
+```
+Start backend:
+```bash
+npm run dev
+```
 
 ## 3. Frontend Setup
 
 Create a .env file with:
 
+```env
 VITE_API_BASE_URL=http://localhost:3000
+```
 
 Run frontend:
 
+
 ```bash
+cd frontend
+npm install
 npm run dev
 ```

@@ -54,7 +54,7 @@ export default function AnalyzeForm() {
                 );
                 setRequests(updatedRequests as AnalysisRequest[]);
             } catch (err) {
-                console.error("Помилка оновлення запитів:", err);
+                console.error("Query update error:", err);
             }
         }, 5000);
 
