@@ -24,11 +24,13 @@ npm install
 ```
 Create a .env file with:
 
+```env
 UPSTASH_REDIS_REST_URL=<your-redis-url>
 UPSTASH_REDIS_REST_TOKEN=<your-redis-token>
 OPENAI_API_KEY=<your-openai-api-key>
 QSTASH_TOKEN=<your-qstash-token>
 BACKEND_URL=<your-ngrok-url-or-prod-url>
+```
 
 Note: If you are testing webhooks locally with QStash, run ngrok http 3000 and use the generated ngrok URL as BACKEND_URL.
 
