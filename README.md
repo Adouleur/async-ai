@@ -13,7 +13,7 @@ This repository contains a simple web service where users can submit data about 
 ### 1. Clone the repo
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Adouleur/async-ai.git
 cd async-ai
 
 ## 2. Backend Setup
